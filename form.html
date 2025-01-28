@@ -13,7 +13,8 @@
             <a href="table.html">Schools & Courses</a>
         </nav>
     </header>
-    <h1>Application form</h1>
+    <h1>Sign Up</h1>
+    <h3><em>Take the next steps to apply at AltSchool Africa</em></h3>
     
     <form action="/submit">
 
@@ -37,13 +38,6 @@
         <br>
 
         <div>
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
-        </div>
-
-        <br>
-
-        <div>
             <label for="gender">Gender:</label>
 
             <input type="radio" id="male" name="gender" value="Male" required>
@@ -56,6 +50,20 @@
             <label for="other">Other</label>
         </div>
 
+        <br>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9] {10}" required>
+        </div>
+        
         <br>
 
         <div>
@@ -262,12 +270,18 @@
                     <option value="ZM">Zambia</option>
                     <option value="ZW">Zimbabwe</option>
                   </select>
-                  
         </div>
         <br>
 
         <div>
-            <label for="education">Highest Level of Education</label>
+               
+            <label for="state">State of Residence:</label>
+            <input type="text" id="state" name="state" placeholder="Optional">      
+        </div>
+        <br>
+
+        <div>
+            <label for="education">Highest Level of Education:</label>
             <select name="education" id="educ" required>
                 <option value="">---Select your education level---</option>
                 <option value="None">Lower Levels</option>
@@ -282,20 +296,38 @@
 
         <br>
 
-        <label for="reasons">Why do you want/ wish to join AltSchool Africa</label>
-        <input type="text" id="reasons" name="reasons" required>
+        <div>
+            <div>
+                <label for="paswrd">Password:</label>
+                <input type="password" id="paswrd" name="paswrd" placeholder="password" minlength="8" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="confirm-password">Confirm password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Info">How did you hear about us?</label>
+            <input type="text" id="info" name="info" required>
         
+        </div>
+
         <br>
         <br>
 
         <button type="reset">Reset</button>
 
-        <button type="submit" style="margin-left: 100px;">Submit</button>
+        <button type="submit">SignUp</button>
         <br>
         <br>
 
         <footer>
-            <label for="mail">Email us at:</label>
+            <label for="mail">For more information email us at:</label>
             <address id="mail"><a href="mailto:academics@altschool.com">tmugasa256@gmail.com</a></address>
     
             <p>&copy;2024 JP IT Solutions All rights reserved</p>
